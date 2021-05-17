@@ -32,8 +32,8 @@ vpc_cidr = "Specify the cidr block (eg: 172.16.0.0/16)"
 
 
 ```sh
-$ cd terraform-vpc  >>>>> Directory in which your code need to be run
 $ git clone https://github.com/ArunMannayan/Terraform.git
+$ cd terraform 
 $ terraform init
 $ terraform plan
 $ terraform apply -auto-approve
