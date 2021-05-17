@@ -1,0 +1,5 @@
+region = "ap-south-1"
+access_key = "AKIASBDGXBXL3UK3XMHE"
+secret_key = "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"
+project = "myapp.blog.com"
+vpc_cidr = "172.16.0.0/16"
