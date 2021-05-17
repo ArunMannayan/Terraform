@@ -23,8 +23,8 @@
 ```sh
 # vi terraform.tfvars
 region = "Specify_your_region"
-access_key = "IAM Your access key"
-secret_key = "IAM Your Secret key "
+access_key = "IAM user access key"
+secret_key = "IAM user Secret key "
 project = "Project name"
 vpc_cidr = "Specify the cidr block (eg: 172.16.0.0/16)"
 ```
