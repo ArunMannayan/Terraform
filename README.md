@@ -57,8 +57,8 @@ provider "aws" {
   secret_key = var.secret_key
 }
 ```
-### Create a terraform.tfvars
-By default terraform.tfvars will load the variables to the the reources.
+###### Create a terraform.tfvars
+> By default terraform.tfvars will load the variables to the the reources.
 You can modify accordingly as per your requirements.
 
 ```sh
@@ -69,7 +69,7 @@ project = "Project-name"
 vpc_cidr = "Specify-the-cidr-block (eg: 172.16.0.0/16)"
 ```
 
-#### Lets start creating main.tf file with the details below.
+#### Creating main.tf file with the details below.
 
 
 > To create VPC
