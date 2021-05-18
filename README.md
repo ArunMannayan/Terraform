@@ -1,6 +1,6 @@
 # Terraform code for VPC creation
 
-#### Terraform code for VPC creation in an AWS region with multiple subnets (Both private and public) using tfvars file to access and modify variables.
+### Terraform code for VPC creation in an AWS region with multiple subnets (Both private and public) using tfvars file to access and modify variables.
 ##### Code included,
 
 - Variable declaration
@@ -69,7 +69,7 @@ project = "Project-name"
 vpc_cidr = "Specify-the-cidr-block (eg: 172.16.0.0/16)"
 ```
 
-#### Creating main.tf file with the details below.
+###### Creating main.tf file with the details below.
 
 
 > To create VPC
@@ -100,7 +100,7 @@ resource "aws_internet_gateway" "igw" {
   }
 }
 ```
-Here in this infrastructre we shall create 3 public and 3 private subnets in the region. Here we use terraform to automate the subnetting in /19 using the function "cidrsubnet"
+##### Here in this infrastructre we shall create 3 public and 3 private subnets in the region. Here we use terraform to automate the subnetting in /19 using the function "cidrsubnet"
 
 > Creating public1 Subnet
 ```sh
@@ -250,7 +250,7 @@ resource "aws_route_table_association" "private3" {
   route_table_id = aws_route_table.private.id
 }
 ````
-### Create an output.tf for getting  terrafrom output.
+###### Create an output.tf for getting  terrafrom output.
 ```sh
 output "aws_eip" {
 value = aws_eip.eip.public_ip
